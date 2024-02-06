@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ec423aaccee5c00667be5947c1e2bcd8 {
+                #map_e6451a080eabee78ec20e4fbc624dc48 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_ec423aaccee5c00667be5947c1e2bcd8" ></div>
+            <div class="folium-map" id="map_e6451a080eabee78ec20e4fbc624dc48" ></div>
         
 </body>
 <script>
     
     
-            var map_ec423aaccee5c00667be5947c1e2bcd8 = L.map(
-                "map_ec423aaccee5c00667be5947c1e2bcd8",
+            var map_e6451a080eabee78ec20e4fbc624dc48 = L.map(
+                "map_e6451a080eabee78ec20e4fbc624dc48",
                 {
-                    center: [-15.837851453586024, -70.0258515374305],
+                    center: [-15.84047198572467, -70.02294316929805],
                     crs: L.CRS.EPSG3857,
-                    zoom: 13,
+                    zoom: 15,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,37 +60,213 @@
 
         
     
-            var tile_layer_18dd1dc0c0a8e0ff4be1f60435d5c85e = L.tileLayer(
+            var tile_layer_10a18530522e0d839ade5030804efc8d = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_18dd1dc0c0a8e0ff4be1f60435d5c85e.addTo(map_ec423aaccee5c00667be5947c1e2bcd8);
+            tile_layer_10a18530522e0d839ade5030804efc8d.addTo(map_e6451a080eabee78ec20e4fbc624dc48);
         
     
-            var marker_b611cbee270a0f6df4d871972d8a4449 = L.marker(
-                [-15.838449813298372, -70.02333457146561],
+            var marker_9c352bdeef0061302e497e8618179b98 = L.marker(
+                [-15.83846768, -70.02342189],
                 {}
-            ).addTo(map_ec423aaccee5c00667be5947c1e2bcd8);
+            ).addTo(map_e6451a080eabee78ec20e4fbc624dc48);
         
     
-        var popup_2a15b0d88356b1a4262fedf4656143e2 = L.popup({"maxWidth": "100%"});
+        var custom_icon_9534c38ed5508f17eba509ecd05261df = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"});
+        marker_9c352bdeef0061302e497e8618179b98.setIcon(custom_icon_9534c38ed5508f17eba509ecd05261df);
+        
+    
+        var popup_f63a77a72284158c2bc5d56dd201eeaa = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c989eb9a759752d097c51b9ab8fee6f2 = $(`<div id="html_c989eb9a759752d097c51b9ab8fee6f2" style="width: 100.0%; height: 100.0%;">Tienda 1</div>`)[0];
-                popup_2a15b0d88356b1a4262fedf4656143e2.setContent(html_c989eb9a759752d097c51b9ab8fee6f2);
+                var html_ff9f9027d20bd8648ab698577b40c903 = $(`<div id="html_ff9f9027d20bd8648ab698577b40c903" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Distribuidor<br><b><big>Nombre:</big></b> Yedar Distribuciones<br><b><big>Contacto:</big></b> Darwin</div>`)[0];
+                popup_f63a77a72284158c2bc5d56dd201eeaa.setContent(html_ff9f9027d20bd8648ab698577b40c903);
             
         
 
-        marker_b611cbee270a0f6df4d871972d8a4449.bindPopup(popup_2a15b0d88356b1a4262fedf4656143e2)
+        marker_9c352bdeef0061302e497e8618179b98.bindPopup(popup_f63a77a72284158c2bc5d56dd201eeaa)
         ;
 
         
     
     
-            tile_layer_18dd1dc0c0a8e0ff4be1f60435d5c85e.addTo(map_ec423aaccee5c00667be5947c1e2bcd8);
+        var popup_0bcaba62a67602001a06d90e06761549 = L.popup({"maxWidth": 300});
+
         
+            
+                var html_5a905cd0910209a300b7ffd89f894620 = $(`<div id="html_5a905cd0910209a300b7ffd89f894620" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Distribuidor<br><b><big>Nombre:</big></b> Yedar Distribuciones<br><b><big>Contacto:</big></b> Darwin</div>`)[0];
+                popup_0bcaba62a67602001a06d90e06761549.setContent(html_5a905cd0910209a300b7ffd89f894620);
+            
+        
+
+        marker_9c352bdeef0061302e497e8618179b98.bindPopup(popup_0bcaba62a67602001a06d90e06761549)
+        ;
+
+        
+    
+    
+            var marker_f2a05fc7316999a293ff5412ef16f6c6 = L.marker(
+                [-15.83908019, -70.02831052],
+                {}
+            ).addTo(map_e6451a080eabee78ec20e4fbc624dc48);
+        
+    
+        var custom_icon_22e6752a4285a0896d21f1fed89ebf3f = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"});
+        marker_f2a05fc7316999a293ff5412ef16f6c6.setIcon(custom_icon_22e6752a4285a0896d21f1fed89ebf3f);
+        
+    
+        var popup_6cfb0ae22082e5fc38c602bd8fcbdc0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b0ad72132c9f6711714ee625dc5209 = $(`<div id="html_f8b0ad72132c9f6711714ee625dc5209" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Discoteca<br><b><big>Nombre:</big></b> Domino<br><b><big>Contacto:</big></b> Gustavo</div>`)[0];
+                popup_6cfb0ae22082e5fc38c602bd8fcbdc0f.setContent(html_f8b0ad72132c9f6711714ee625dc5209);
+            
+        
+
+        marker_f2a05fc7316999a293ff5412ef16f6c6.bindPopup(popup_6cfb0ae22082e5fc38c602bd8fcbdc0f)
+        ;
+
+        
+    
+    
+        var popup_172b955e94d8745c8c4659b1e7420ca4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25bf849ca4aef036e8ee23af4e6214ae = $(`<div id="html_25bf849ca4aef036e8ee23af4e6214ae" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Discoteca<br><b><big>Nombre:</big></b> Domino<br><b><big>Contacto:</big></b> Gustavo</div>`)[0];
+                popup_172b955e94d8745c8c4659b1e7420ca4.setContent(html_25bf849ca4aef036e8ee23af4e6214ae);
+            
+        
+
+        marker_f2a05fc7316999a293ff5412ef16f6c6.bindPopup(popup_172b955e94d8745c8c4659b1e7420ca4)
+        ;
+
+        
+    
+    
+            var marker_a4cc7b116cf54b5f7a075877bae94591 = L.marker(
+                [-15.83902308, -70.02795196],
+                {}
+            ).addTo(map_e6451a080eabee78ec20e4fbc624dc48);
+        
+    
+        var custom_icon_21a261b26cd42a7f2f014841eb63ad28 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"});
+        marker_a4cc7b116cf54b5f7a075877bae94591.setIcon(custom_icon_21a261b26cd42a7f2f014841eb63ad28);
+        
+    
+        var popup_5333ab441a4c84c1b980490dfcc9d0b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b5a76a4eaec30218ff41fa268fc1c6 = $(`<div id="html_33b5a76a4eaec30218ff41fa268fc1c6" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Discoteca<br><b><big>Nombre:</big></b> Bardeli<br><b><big>Contacto:</big></b> Gustavo</div>`)[0];
+                popup_5333ab441a4c84c1b980490dfcc9d0b3.setContent(html_33b5a76a4eaec30218ff41fa268fc1c6);
+            
+        
+
+        marker_a4cc7b116cf54b5f7a075877bae94591.bindPopup(popup_5333ab441a4c84c1b980490dfcc9d0b3)
+        ;
+
+        
+    
+    
+        var popup_3b8b9f32479f6fa9590788f002c2ecd4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_609224bb89a521be7bc3a259f4e0aa44 = $(`<div id="html_609224bb89a521be7bc3a259f4e0aa44" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Discoteca<br><b><big>Nombre:</big></b> Bardeli<br><b><big>Contacto:</big></b> Gustavo</div>`)[0];
+                popup_3b8b9f32479f6fa9590788f002c2ecd4.setContent(html_609224bb89a521be7bc3a259f4e0aa44);
+            
+        
+
+        marker_a4cc7b116cf54b5f7a075877bae94591.bindPopup(popup_3b8b9f32479f6fa9590788f002c2ecd4)
+        ;
+
+        
+    
+    
+            var marker_ada0983dd783d95a6d035c08f0b7bbef = L.marker(
+                [-15.82790478, -69.99311141],
+                {}
+            ).addTo(map_e6451a080eabee78ec20e4fbc624dc48);
+        
+    
+        var custom_icon_38b79b2ac216e52d53faec64d473dbeb = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
+        marker_ada0983dd783d95a6d035c08f0b7bbef.setIcon(custom_icon_38b79b2ac216e52d53faec64d473dbeb);
+        
+    
+        var popup_86693f9babf7d45ea7ec796328ab5f04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48e837fa2d97ae5b6b1256ac7f6a8e07 = $(`<div id="html_48e837fa2d97ae5b6b1256ac7f6a8e07" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Hotel<br><b><big>Nombre:</big></b> GHL Sonesta<br><b><big>Contacto:</big></b> x</div>`)[0];
+                popup_86693f9babf7d45ea7ec796328ab5f04.setContent(html_48e837fa2d97ae5b6b1256ac7f6a8e07);
+            
+        
+
+        marker_ada0983dd783d95a6d035c08f0b7bbef.bindPopup(popup_86693f9babf7d45ea7ec796328ab5f04)
+        ;
+
+        
+    
+    
+        var popup_00e0075a4137ea5c34737a02f63c46ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_80602e378fc4f4631139fad04fb370b7 = $(`<div id="html_80602e378fc4f4631139fad04fb370b7" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Hotel<br><b><big>Nombre:</big></b> GHL Sonesta<br><b><big>Contacto:</big></b> x</div>`)[0];
+                popup_00e0075a4137ea5c34737a02f63c46ca.setContent(html_80602e378fc4f4631139fad04fb370b7);
+            
+        
+
+        marker_ada0983dd783d95a6d035c08f0b7bbef.bindPopup(popup_00e0075a4137ea5c34737a02f63c46ca)
+        ;
+
+        
+    
+    
+            var marker_8911ceb508434622b27366160b25eeae = L.marker(
+                [-15.83912422, -70.02734464],
+                {}
+            ).addTo(map_e6451a080eabee78ec20e4fbc624dc48);
+        
+    
+        var custom_icon_802bdce8856043a4640f1f083fd0d776 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
+        marker_8911ceb508434622b27366160b25eeae.setIcon(custom_icon_802bdce8856043a4640f1f083fd0d776);
+        
+    
+        var popup_6182aeb9902b8772ad96abd92ed7bd39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d4ed6a9bcf504e5c72a00b243935e9 = $(`<div id="html_c1d4ed6a9bcf504e5c72a00b243935e9" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Licorería<br><b><big>Nombre:</big></b> Don Pepito<br><b><big>Contacto:</big></b> x</div>`)[0];
+                popup_6182aeb9902b8772ad96abd92ed7bd39.setContent(html_c1d4ed6a9bcf504e5c72a00b243935e9);
+            
+        
+
+        marker_8911ceb508434622b27366160b25eeae.bindPopup(popup_6182aeb9902b8772ad96abd92ed7bd39)
+        ;
+
+        
+    
+    
+        var popup_df8232145274fdb26101396b20ef6249 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b35284a608bb259e8022f84dc65a0f8 = $(`<div id="html_8b35284a608bb259e8022f84dc65a0f8" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> Licorería<br><b><big>Nombre:</big></b> Don Pepito<br><b><big>Contacto:</big></b> x</div>`)[0];
+                popup_df8232145274fdb26101396b20ef6249.setContent(html_8b35284a608bb259e8022f84dc65a0f8);
+            
+        
+
+        marker_8911ceb508434622b27366160b25eeae.bindPopup(popup_df8232145274fdb26101396b20ef6249)
+        ;
+
+        
+    
 </script>
 </html>
