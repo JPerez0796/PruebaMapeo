@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_03f6880816b56204efacca31ab54c7ee {
+                #map_d3429b00507a6db003d0563254e3f5f2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,34 @@
 <body>
     
     
-            <div class="folium-map" id="map_03f6880816b56204efacca31ab54c7ee" ></div>
+     <div style="
+     position: fixed; 
+     bottom: 50px; right: 50px; width: 170px; height: 250px; 
+     border:2px solid grey; z-index:9999; font-size:14px;
+     background-color: white;
+     opacity: 0.7;
+     ">
+     <p style="margin-top: 10px; margin-left: 10px;"><b>Leyenda</b></p>
+     <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" style="height:25px;"> Subdistribuidor</p>
+     <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" style="height:25px;"> Discoteca</p>
+     <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png" style="height:25px;"> Hotel</p>
+     <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png" style="height:25px;"> Licorería</p>
+     <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png" style="height:25px;"> Supermercado</p>
+     </div>
+     
+    
+            <div class="folium-map" id="map_d3429b00507a6db003d0563254e3f5f2" ></div>
         
 </body>
 <script>
     
     
-            var map_03f6880816b56204efacca31ab54c7ee = L.map(
-                "map_03f6880816b56204efacca31ab54c7ee",
+            var map_d3429b00507a6db003d0563254e3f5f2 = L.map(
+                "map_d3429b00507a6db003d0563254e3f5f2",
                 {
-                    center: [-15.84047198572467, -70.02294316929805],
+                    center: [-14.624171004103575, -71.71546915488696],
                     crs: L.CRS.EPSG3857,
-                    zoom: 15,
+                    zoom: 8,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,237 +76,412 @@
 
         
     
-            var tile_layer_145853e0b96760cfd147984ecee41c59 = L.tileLayer(
+            var tile_layer_2269f82e8f0248e5821cf718aa8b1f41 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_145853e0b96760cfd147984ecee41c59.addTo(map_03f6880816b56204efacca31ab54c7ee);
+            tile_layer_2269f82e8f0248e5821cf718aa8b1f41.addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-            var marker_b11323214aeb10d55921d4e8e27412a3 = L.marker(
+            var marker_819e6dec6f63114dc22163d3980238b7 = L.marker(
                 [-15.83846768, -70.02342189],
                 {}
-            ).addTo(map_03f6880816b56204efacca31ab54c7ee);
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-        var custom_icon_a1f8bb8d2b94edfe87d4ee19885d5016 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"});
-        marker_b11323214aeb10d55921d4e8e27412a3.setIcon(custom_icon_a1f8bb8d2b94edfe87d4ee19885d5016);
+        var custom_icon_903872bd144ce5baf45954e8218578c6 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"});
+        marker_819e6dec6f63114dc22163d3980238b7.setIcon(custom_icon_903872bd144ce5baf45954e8218578c6);
         
     
-        var popup_ae24c2edb0127267df36f9d6da006f32 = L.popup({"maxWidth": "100%"});
+        var popup_3846bde72c738468bed78e4d8eb459dd = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_baf665930cdc88b6319346d0cdf0d2cd = $(`<div id="html_baf665930cdc88b6319346d0cdf0d2cd" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Distribuidor</big><br><b><big>Nombre:</big></b> <big>Yedar Distribuciones</big><br><b><big>Contacto:</big></b> <big>Darwin</big><br><img src='' width='200'></div>`)[0];
-                popup_ae24c2edb0127267df36f9d6da006f32.setContent(html_baf665930cdc88b6319346d0cdf0d2cd);
+                var html_6218ff0dc11a5d0917bc443935b17427 = $(`<div id="html_6218ff0dc11a5d0917bc443935b17427" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Subdistribuidor</big><br><b><big>Nombre:</big></b> <big>Yedar Distribuciones</big><br><b><big>Contacto:</big></b> <big>Darwin</big><br><img src='' width='200'></div>`)[0];
+                popup_3846bde72c738468bed78e4d8eb459dd.setContent(html_6218ff0dc11a5d0917bc443935b17427);
             
         
 
-        marker_b11323214aeb10d55921d4e8e27412a3.bindPopup(popup_ae24c2edb0127267df36f9d6da006f32)
+        marker_819e6dec6f63114dc22163d3980238b7.bindPopup(popup_3846bde72c738468bed78e4d8eb459dd)
         ;
 
         
     
     
-        var popup_bcb476bdbbc45075860734a0f5a0caeb = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_c83bf043042dd0ab51d4885848819360 = $(`<div id="html_c83bf043042dd0ab51d4885848819360" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Distribuidor</big><br><b><big>Nombre:</big></b> <big>Yedar Distribuciones</big><br><b><big>Contacto:</big></b> <big>Darwin</big><br><img src='' width='200'></div>`)[0];
-                popup_bcb476bdbbc45075860734a0f5a0caeb.setContent(html_c83bf043042dd0ab51d4885848819360);
-            
-        
-
-        marker_b11323214aeb10d55921d4e8e27412a3.bindPopup(popup_bcb476bdbbc45075860734a0f5a0caeb)
-        ;
-
-        
-    
-    
-            var marker_fc85b2524b4c27e30fb2bce21e8a54c4 = L.marker(
+            var marker_b52225c81d6afe9cfc3834652324624d = L.marker(
                 [-15.83908019, -70.02831052],
                 {}
-            ).addTo(map_03f6880816b56204efacca31ab54c7ee);
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-        var custom_icon_40fadf4114f51035e1b83f2c13cb3715 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"});
-        marker_fc85b2524b4c27e30fb2bce21e8a54c4.setIcon(custom_icon_40fadf4114f51035e1b83f2c13cb3715);
+        var custom_icon_12729d3abdc79b1ea1f1925e5496768f = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"});
+        marker_b52225c81d6afe9cfc3834652324624d.setIcon(custom_icon_12729d3abdc79b1ea1f1925e5496768f);
         
     
-        var popup_2022e6adc683dc0936fb8bb100eecc2d = L.popup({"maxWidth": "100%"});
+        var popup_5749cd7304b9346ec5f4fe6bc10c3a0c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_232cc37f115c2d9fea830899bbdff053 = $(`<div id="html_232cc37f115c2d9fea830899bbdff053" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Discoteca</big><br><b><big>Nombre:</big></b> <big>Domino</big><br><b><big>Contacto:</big></b> <big>Gustavo</big><br><img src='' width='200'></div>`)[0];
-                popup_2022e6adc683dc0936fb8bb100eecc2d.setContent(html_232cc37f115c2d9fea830899bbdff053);
+                var html_47724e9c4e52ce8f1be75bbeab00ea54 = $(`<div id="html_47724e9c4e52ce8f1be75bbeab00ea54" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Discoteca</big><br><b><big>Nombre:</big></b> <big>Domino</big><br><b><big>Contacto:</big></b> <big>Gustavo</big><br><img src='' width='200'></div>`)[0];
+                popup_5749cd7304b9346ec5f4fe6bc10c3a0c.setContent(html_47724e9c4e52ce8f1be75bbeab00ea54);
             
         
 
-        marker_fc85b2524b4c27e30fb2bce21e8a54c4.bindPopup(popup_2022e6adc683dc0936fb8bb100eecc2d)
+        marker_b52225c81d6afe9cfc3834652324624d.bindPopup(popup_5749cd7304b9346ec5f4fe6bc10c3a0c)
         ;
 
         
     
     
-        var popup_bf785a02dd599979b60fcfdc1ae86556 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_34ff0ea671282d08af1d33e979b2ab37 = $(`<div id="html_34ff0ea671282d08af1d33e979b2ab37" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Discoteca</big><br><b><big>Nombre:</big></b> <big>Domino</big><br><b><big>Contacto:</big></b> <big>Gustavo</big><br><img src='' width='200'></div>`)[0];
-                popup_bf785a02dd599979b60fcfdc1ae86556.setContent(html_34ff0ea671282d08af1d33e979b2ab37);
-            
-        
-
-        marker_fc85b2524b4c27e30fb2bce21e8a54c4.bindPopup(popup_bf785a02dd599979b60fcfdc1ae86556)
-        ;
-
-        
-    
-    
-            var marker_81cb4ecc4e8917d091194f5c48735ed7 = L.marker(
+            var marker_21df3370ed69aa72d72f9bb7edb10a84 = L.marker(
                 [-15.83902308, -70.02795196],
                 {}
-            ).addTo(map_03f6880816b56204efacca31ab54c7ee);
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-        var custom_icon_1e0ad1bb81882b1c67d38e0b6b54791b = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"});
-        marker_81cb4ecc4e8917d091194f5c48735ed7.setIcon(custom_icon_1e0ad1bb81882b1c67d38e0b6b54791b);
+        var custom_icon_f065d40f007aa6fa2cdbb69c8fe49ae1 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"});
+        marker_21df3370ed69aa72d72f9bb7edb10a84.setIcon(custom_icon_f065d40f007aa6fa2cdbb69c8fe49ae1);
         
     
-        var popup_d339f6daa68ee8f04272fa731ed50732 = L.popup({"maxWidth": "100%"});
+        var popup_ee472e733592fc6c42816622c71159db = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4273f3f38b7998bde0ae46db3b937117 = $(`<div id="html_4273f3f38b7998bde0ae46db3b937117" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Discoteca</big><br><b><big>Nombre:</big></b> <big>Bardeli</big><br><b><big>Contacto:</big></b> <big>Gustavo</big><br><img src='' width='200'></div>`)[0];
-                popup_d339f6daa68ee8f04272fa731ed50732.setContent(html_4273f3f38b7998bde0ae46db3b937117);
+                var html_a1fe757471ee1e21d1388bc6af38e88a = $(`<div id="html_a1fe757471ee1e21d1388bc6af38e88a" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Discoteca</big><br><b><big>Nombre:</big></b> <big>Bardeli</big><br><b><big>Contacto:</big></b> <big>Gustavo</big><br><img src='' width='200'></div>`)[0];
+                popup_ee472e733592fc6c42816622c71159db.setContent(html_a1fe757471ee1e21d1388bc6af38e88a);
             
         
 
-        marker_81cb4ecc4e8917d091194f5c48735ed7.bindPopup(popup_d339f6daa68ee8f04272fa731ed50732)
+        marker_21df3370ed69aa72d72f9bb7edb10a84.bindPopup(popup_ee472e733592fc6c42816622c71159db)
         ;
 
         
     
     
-        var popup_471e8490d8c389626e467cc17ad4f88f = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_b1b34837cddc168784fe889816030066 = $(`<div id="html_b1b34837cddc168784fe889816030066" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Discoteca</big><br><b><big>Nombre:</big></b> <big>Bardeli</big><br><b><big>Contacto:</big></b> <big>Gustavo</big><br><img src='' width='200'></div>`)[0];
-                popup_471e8490d8c389626e467cc17ad4f88f.setContent(html_b1b34837cddc168784fe889816030066);
-            
-        
-
-        marker_81cb4ecc4e8917d091194f5c48735ed7.bindPopup(popup_471e8490d8c389626e467cc17ad4f88f)
-        ;
-
-        
-    
-    
-            var marker_748124af3e04286d32705c5ecdee433c = L.marker(
+            var marker_7e063ef68c7f9b24f575be2b9e634b78 = L.marker(
                 [-15.82790478, -69.99311141],
                 {}
-            ).addTo(map_03f6880816b56204efacca31ab54c7ee);
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-        var custom_icon_a79a03eb39cd91ea008ac25d45794592 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
-        marker_748124af3e04286d32705c5ecdee433c.setIcon(custom_icon_a79a03eb39cd91ea008ac25d45794592);
+        var custom_icon_66483546201d312b42a8d15e98cc8b90 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
+        marker_7e063ef68c7f9b24f575be2b9e634b78.setIcon(custom_icon_66483546201d312b42a8d15e98cc8b90);
         
     
-        var popup_d234ef4928d2dceccbf0a2f5fe21685f = L.popup({"maxWidth": "100%"});
+        var popup_d9ea928a0b46ca24c6b59c1c472ed702 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_8eca1af5f6daa8f8cb2b68ef58df9b1a = $(`<div id="html_8eca1af5f6daa8f8cb2b68ef58df9b1a" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Hotel</big><br><b><big>Nombre:</big></b> <big>GHL Sonesta</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JPerez0796/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/GHL%20Sonesta.jpg?raw=true' width='200'></div>`)[0];
-                popup_d234ef4928d2dceccbf0a2f5fe21685f.setContent(html_8eca1af5f6daa8f8cb2b68ef58df9b1a);
+                var html_fe5ac77088f6464c0e723f9e3ca82657 = $(`<div id="html_fe5ac77088f6464c0e723f9e3ca82657" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Hotel</big><br><b><big>Nombre:</big></b> <big>GHL Sonesta</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/GHL%20Sonesta.jpg?raw=true' width='200'></div>`)[0];
+                popup_d9ea928a0b46ca24c6b59c1c472ed702.setContent(html_fe5ac77088f6464c0e723f9e3ca82657);
             
         
 
-        marker_748124af3e04286d32705c5ecdee433c.bindPopup(popup_d234ef4928d2dceccbf0a2f5fe21685f)
+        marker_7e063ef68c7f9b24f575be2b9e634b78.bindPopup(popup_d9ea928a0b46ca24c6b59c1c472ed702)
         ;
 
         
     
     
-        var popup_a8d83307fd0f804c14cd5248abe549e2 = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_1517ab813728d064d3e59f94a93bf283 = $(`<div id="html_1517ab813728d064d3e59f94a93bf283" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Hotel</big><br><b><big>Nombre:</big></b> <big>GHL Sonesta</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JPerez0796/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/GHL%20Sonesta.jpg?raw=true' width='200'></div>`)[0];
-                popup_a8d83307fd0f804c14cd5248abe549e2.setContent(html_1517ab813728d064d3e59f94a93bf283);
-            
-        
-
-        marker_748124af3e04286d32705c5ecdee433c.bindPopup(popup_a8d83307fd0f804c14cd5248abe549e2)
-        ;
-
-        
-    
-    
-            var marker_eaa5d601b365ca4247f067a65ba9f2a6 = L.marker(
+            var marker_b35c08a6329709cdbb0f9c5667e144b8 = L.marker(
                 [-15.83912422, -70.02734464],
                 {}
-            ).addTo(map_03f6880816b56204efacca31ab54c7ee);
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-        var custom_icon_6b348b93aa598a578e75135ddca22d59 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
-        marker_eaa5d601b365ca4247f067a65ba9f2a6.setIcon(custom_icon_6b348b93aa598a578e75135ddca22d59);
+        var custom_icon_7fb8f005d13ae8fc0a270ae083d5aac3 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png"});
+        marker_b35c08a6329709cdbb0f9c5667e144b8.setIcon(custom_icon_7fb8f005d13ae8fc0a270ae083d5aac3);
         
     
-        var popup_edef51b1a87811caa62879093d9b904f = L.popup({"maxWidth": "100%"});
+        var popup_7112bb41a25555045df78548b89b3dd0 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3fa47b0b80c8f45c07ed1107f4665b0f = $(`<div id="html_3fa47b0b80c8f45c07ed1107f4665b0f" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Licorería</big><br><b><big>Nombre:</big></b> <big>Don Pepito</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JPerez0796/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Licorer%C3%ADa%20Don%20Pepito.jpeg?raw=true' width='200'></div>`)[0];
-                popup_edef51b1a87811caa62879093d9b904f.setContent(html_3fa47b0b80c8f45c07ed1107f4665b0f);
+                var html_90d09c08031672308f7ec4cdbd587433 = $(`<div id="html_90d09c08031672308f7ec4cdbd587433" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Licorería</big><br><b><big>Nombre:</big></b> <big>Don Pepito</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Licorer%C3%ADa%20Don%20Pepito.jpeg?raw=true' width='200'></div>`)[0];
+                popup_7112bb41a25555045df78548b89b3dd0.setContent(html_90d09c08031672308f7ec4cdbd587433);
             
         
 
-        marker_eaa5d601b365ca4247f067a65ba9f2a6.bindPopup(popup_edef51b1a87811caa62879093d9b904f)
+        marker_b35c08a6329709cdbb0f9c5667e144b8.bindPopup(popup_7112bb41a25555045df78548b89b3dd0)
         ;
 
         
     
     
-        var popup_710a2f3b837320b4817001c892cd20f7 = L.popup({"maxWidth": 300});
+            var marker_bea8728c77ea31f01863adc273cf7b50 = L.marker(
+                [-15.8360509, -70.02869223],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_79573cba19a858ced34784eec93a576c = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
+        marker_bea8728c77ea31f01863adc273cf7b50.setIcon(custom_icon_79573cba19a858ced34784eec93a576c);
+        
+    
+        var popup_ac5248892907006b05ee0bda4922ce3e = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1563e4ff0b58446cd9ca26cb334fbbd6 = $(`<div id="html_1563e4ff0b58446cd9ca26cb334fbbd6" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Licorería</big><br><b><big>Nombre:</big></b> <big>Don Pepito</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JPerez0796/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Licorer%C3%ADa%20Don%20Pepito.jpeg?raw=true' width='200'></div>`)[0];
-                popup_710a2f3b837320b4817001c892cd20f7.setContent(html_1563e4ff0b58446cd9ca26cb334fbbd6);
+                var html_3651c922f10277319f06f3e8802bb5b6 = $(`<div id="html_3651c922f10277319f06f3e8802bb5b6" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Hotel</big><br><b><big>Nombre:</big></b> <big>Casa Andina Standart</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='' width='200'></div>`)[0];
+                popup_ac5248892907006b05ee0bda4922ce3e.setContent(html_3651c922f10277319f06f3e8802bb5b6);
             
         
 
-        marker_eaa5d601b365ca4247f067a65ba9f2a6.bindPopup(popup_710a2f3b837320b4817001c892cd20f7)
+        marker_bea8728c77ea31f01863adc273cf7b50.bindPopup(popup_ac5248892907006b05ee0bda4922ce3e)
         ;
 
         
     
     
-            var tile_layer_bad773860e12807ebaa7908f02a66a7a = L.tileLayer(
+            var marker_ee822e3d470d71af7419b774b38d160b = L.marker(
+                [-15.83671077, -70.02550603],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_89053e5cf919e512340b117f1d82fffd = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png"});
+        marker_ee822e3d470d71af7419b774b38d160b.setIcon(custom_icon_89053e5cf919e512340b117f1d82fffd);
+        
+    
+        var popup_c24816a6e74d569f73016bbe946cac28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a42ed7448a09416e4700e2f1efb93ef = $(`<div id="html_3a42ed7448a09416e4700e2f1efb93ef" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Supermercado</big><br><b><big>Nombre:</big></b> <big>Plaza Vea</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Plaza%20Vea%20Puno.jpeg?raw=true' width='200'></div>`)[0];
+                popup_c24816a6e74d569f73016bbe946cac28.setContent(html_3a42ed7448a09416e4700e2f1efb93ef);
+            
+        
+
+        marker_ee822e3d470d71af7419b774b38d160b.bindPopup(popup_c24816a6e74d569f73016bbe946cac28)
+        ;
+
+        
+    
+    
+            var marker_7d7b50fc7e5c061a27726c7c712c972e = L.marker(
+                [-15.82359781, -69.99707415],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_2d0280d299b62286f61df9ee7f29eb13 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png"});
+        marker_7d7b50fc7e5c061a27726c7c712c972e.setIcon(custom_icon_2d0280d299b62286f61df9ee7f29eb13);
+        
+    
+        var popup_7d603dcc9547b60242504dafe5c168aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f925450c6688ca1ed3bf69b27dc7d584 = $(`<div id="html_f925450c6688ca1ed3bf69b27dc7d584" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Hotel</big><br><b><big>Nombre:</big></b> <big>Casa Andina Premium</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='' width='200'></div>`)[0];
+                popup_7d603dcc9547b60242504dafe5c168aa.setContent(html_f925450c6688ca1ed3bf69b27dc7d584);
+            
+        
+
+        marker_7d7b50fc7e5c061a27726c7c712c972e.bindPopup(popup_7d603dcc9547b60242504dafe5c168aa)
+        ;
+
+        
+    
+    
+            var marker_313b31ed7c8e01f40f56ef6c4a85e0be = L.marker(
+                [-13.53397837, -71.97118741],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_6e928ad214bc69e65e438e2a61d03840 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"});
+        marker_313b31ed7c8e01f40f56ef6c4a85e0be.setIcon(custom_icon_6e928ad214bc69e65e438e2a61d03840);
+        
+    
+        var popup_8ad99bc5904bfc0471eeb43a9682d286 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9783b133d3d0aed114399b081e65b764 = $(`<div id="html_9783b133d3d0aed114399b081e65b764" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Subdistribuidor</big><br><b><big>Nombre:</big></b> <big>Saqras (Sadisac)</big><br><b><big>Contacto:</big></b> <big>Jose Carlos Buoq</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Saqras.jpg?raw=true' width='200'></div>`)[0];
+                popup_8ad99bc5904bfc0471eeb43a9682d286.setContent(html_9783b133d3d0aed114399b081e65b764);
+            
+        
+
+        marker_313b31ed7c8e01f40f56ef6c4a85e0be.bindPopup(popup_8ad99bc5904bfc0471eeb43a9682d286)
+        ;
+
+        
+    
+    
+            var marker_3c3e8f517a206a9f694b45a7fbd7c0d7 = L.marker(
+                [-13.52963358, -71.97055055],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_9672d739015a694da82450e4eae0c78e = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"});
+        marker_3c3e8f517a206a9f694b45a7fbd7c0d7.setIcon(custom_icon_9672d739015a694da82450e4eae0c78e);
+        
+    
+        var popup_abcfb511865f8262365beed62a5ccf14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e67b3b6bde94189292969ca22670f40 = $(`<div id="html_0e67b3b6bde94189292969ca22670f40" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Subdistribuidor</big><br><b><big>Nombre:</big></b> <big>SUR (Sociedad Única)</big><br><b><big>Contacto:</big></b> <big>Reynaldo</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/SUR.jpg?raw=true' width='200'></div>`)[0];
+                popup_abcfb511865f8262365beed62a5ccf14.setContent(html_0e67b3b6bde94189292969ca22670f40);
+            
+        
+
+        marker_3c3e8f517a206a9f694b45a7fbd7c0d7.bindPopup(popup_abcfb511865f8262365beed62a5ccf14)
+        ;
+
+        
+    
+    
+            var marker_834b615303e7a195e3cc44e1ea9aa420 = L.marker(
+                [-13.52728866, -71.94743366],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_bf38b5fdc3e90a454911f2e0c10fee0f = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png"});
+        marker_834b615303e7a195e3cc44e1ea9aa420.setIcon(custom_icon_bf38b5fdc3e90a454911f2e0c10fee0f);
+        
+    
+        var popup_5780836a89915c866bbc4cc1bbd632e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d01a9dbed087c9a7785171544d8e735 = $(`<div id="html_8d01a9dbed087c9a7785171544d8e735" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Supermercado</big><br><b><big>Nombre:</big></b> <big>Orión La Cultura</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Ori%C3%B3n%20La%20Cultura.jpg?raw=true' width='200'></div>`)[0];
+                popup_5780836a89915c866bbc4cc1bbd632e1.setContent(html_8d01a9dbed087c9a7785171544d8e735);
+            
+        
+
+        marker_834b615303e7a195e3cc44e1ea9aa420.bindPopup(popup_5780836a89915c866bbc4cc1bbd632e1)
+        ;
+
+        
+    
+    
+            var marker_53f7199fe536d88f757eec2ee9f9c2d8 = L.marker(
+                [-13.52462519, -71.96461067],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_774d663c35c78498c667a366972972ed = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png"});
+        marker_53f7199fe536d88f757eec2ee9f9c2d8.setIcon(custom_icon_774d663c35c78498c667a366972972ed);
+        
+    
+        var popup_16f250b1356e385911ac3d353b409d2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_effbe1a543aebaa6b6762b3e9b6f69ed = $(`<div id="html_effbe1a543aebaa6b6762b3e9b6f69ed" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Supermercado</big><br><b><big>Nombre:</big></b> <big>Orión Huayruropata</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Ori%C3%B3n%20Huayropata.jpg?raw=true' width='200'></div>`)[0];
+                popup_16f250b1356e385911ac3d353b409d2d.setContent(html_effbe1a543aebaa6b6762b3e9b6f69ed);
+            
+        
+
+        marker_53f7199fe536d88f757eec2ee9f9c2d8.bindPopup(popup_16f250b1356e385911ac3d353b409d2d)
+        ;
+
+        
+    
+    
+            var marker_bdd8d2381428b5802548476b9cbafea2 = L.marker(
+                [-13.52326694, -71.96755356],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_c766b8edc2cbc8fbd6c3b9dd392fc741 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png"});
+        marker_bdd8d2381428b5802548476b9cbafea2.setIcon(custom_icon_c766b8edc2cbc8fbd6c3b9dd392fc741);
+        
+    
+        var popup_7cc060d34ced363e6dc1a0c99899fcdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c228ceb9cee3f24cf5c8699114ddb8d3 = $(`<div id="html_c228ceb9cee3f24cf5c8699114ddb8d3" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Supermercado</big><br><b><big>Nombre:</big></b> <big>Orión Garcilaso</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Ori%C3%B3n%20Garcilaso.jpg?raw=true' width='200'></div>`)[0];
+                popup_7cc060d34ced363e6dc1a0c99899fcdb.setContent(html_c228ceb9cee3f24cf5c8699114ddb8d3);
+            
+        
+
+        marker_bdd8d2381428b5802548476b9cbafea2.bindPopup(popup_7cc060d34ced363e6dc1a0c99899fcdb)
+        ;
+
+        
+    
+    
+            var marker_be8d536592f5b2b8ae06669c6fccd1b5 = L.marker(
+                [-13.52021479, -71.98341432],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_24067dc740dee1513eb3e9bb5051ecaf = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png"});
+        marker_be8d536592f5b2b8ae06669c6fccd1b5.setIcon(custom_icon_24067dc740dee1513eb3e9bb5051ecaf);
+        
+    
+        var popup_2d377bccda314547bdc53388d6953c72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc1b74cebb8ad2e30957738339411d51 = $(`<div id="html_bc1b74cebb8ad2e30957738339411d51" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Supermercado</big><br><b><big>Nombre:</big></b> <big>Orión Unión</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Ori%C3%B3n%20Uni%C3%B3n.jpg?raw=true' width='200'></div>`)[0];
+                popup_2d377bccda314547bdc53388d6953c72.setContent(html_bc1b74cebb8ad2e30957738339411d51);
+            
+        
+
+        marker_be8d536592f5b2b8ae06669c6fccd1b5.bindPopup(popup_2d377bccda314547bdc53388d6953c72)
+        ;
+
+        
+    
+    
+            var marker_f0dda11c631e6de252f331bd37561589 = L.marker(
+                [-13.52092815, -71.97917672],
+                {}
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
+        
+    
+        var custom_icon_206b0c618753d0427fb1534235ff4e51 = L.icon({"iconSize": [25, 41], "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png"});
+        marker_f0dda11c631e6de252f331bd37561589.setIcon(custom_icon_206b0c618753d0427fb1534235ff4e51);
+        
+    
+        var popup_c4d11f87253dee024ca993fb5856aeb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7420a569fe7eac98eae6ca8737e597a1 = $(`<div id="html_7420a569fe7eac98eae6ca8737e597a1" style="width: 100.0%; height: 100.0%;"><b><big>Tipo:</big></b> <big>Supermercado</big><br><b><big>Nombre:</big></b> <big>Orión Matara</big><br><b><big>Contacto:</big></b> <big>x</big><br><img src='https://github.com/JesusPVidal/PruebaMapeo/blob/main/Im%C3%A1genes%20CSV/Ori%C3%B3n%20Matara.jpg?raw=true' width='200'></div>`)[0];
+                popup_c4d11f87253dee024ca993fb5856aeb0.setContent(html_7420a569fe7eac98eae6ca8737e597a1);
+            
+        
+
+        marker_f0dda11c631e6de252f331bd37561589.bindPopup(popup_c4d11f87253dee024ca993fb5856aeb0)
+        ;
+
+        
+    
+    
+            var tile_layer_b120316c55260aa50641f0956cc48b20 = L.tileLayer(
                 "http://{s}.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google Satellite", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
             );
         
     
-            tile_layer_bad773860e12807ebaa7908f02a66a7a.addTo(map_03f6880816b56204efacca31ab54c7ee);
+            tile_layer_b120316c55260aa50641f0956cc48b20.addTo(map_d3429b00507a6db003d0563254e3f5f2);
         
     
-            var layer_control_089772161dd25c781e1fffab1969294c_layers = {
+            var layer_control_56cfe2060bf1c5794539d5aad8bc73a4_layers = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_145853e0b96760cfd147984ecee41c59,
-                    "Sat\u00e9lite" : tile_layer_bad773860e12807ebaa7908f02a66a7a,
+                    "openstreetmap" : tile_layer_2269f82e8f0248e5821cf718aa8b1f41,
+                    "Sat\u00e9lite" : tile_layer_b120316c55260aa50641f0956cc48b20,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_089772161dd25c781e1fffab1969294c = L.control.layers(
-                layer_control_089772161dd25c781e1fffab1969294c_layers.base_layers,
-                layer_control_089772161dd25c781e1fffab1969294c_layers.overlays,
+            let layer_control_56cfe2060bf1c5794539d5aad8bc73a4 = L.control.layers(
+                layer_control_56cfe2060bf1c5794539d5aad8bc73a4_layers.base_layers,
+                layer_control_56cfe2060bf1c5794539d5aad8bc73a4_layers.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "bottomleft"}
-            ).addTo(map_03f6880816b56204efacca31ab54c7ee);
+            ).addTo(map_d3429b00507a6db003d0563254e3f5f2);
 
         
 </script>
